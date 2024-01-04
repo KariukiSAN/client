@@ -1,0 +1,102 @@
+.container {
+    margin-top: 50px;
+}
+
+.heading{
+    font-size: 3em;
+}
+
+body {
+    background-image: url('https://qph.cf2.poecdn.net/main-sdxl_2dff096423118e16bf59e1e8aa020e6af57ccc1b0e50fe9ab30f412001228b5f.png?w=1024&h=1024');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.courses.container {
+    padding: 20px;
+  }
+  
+  .course-cards {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .course-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  .course-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .course-card p {
+    margin-bottom: 10px;
+  }
+  
+  .course-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .course-card button:hover {
+    background-color: #0056b3;
+  }
+
+  .registration.container {
+    padding: 20px;
+  }
+  
+  .registration h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .registration form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registration h2 {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  .registration label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .registration input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .registration button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .registration button:hover {
+    background-color: #0056b3;
+  }
