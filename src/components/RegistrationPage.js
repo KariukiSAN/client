@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-
-
-
 const RegistrationPage = () => {
   const [userInfo, setUserInfo] = useState({
     name: '',
@@ -49,24 +46,38 @@ const RegistrationPage = () => {
         </label>
 
         <h2>Payment Information</h2>
+
         <label>
           Payment Method:
-          <input type="text" name="paymentMethod" value={paymentInfo.paymentMethod} onChange={handlePaymentInfoChange} required />
-        </label>
-        <label>
-          Card Number:
-          <input type="text" name="cardNumber" value={paymentInfo.cardNumber} onChange={handlePaymentInfoChange} required />
+          <select name="paymentMethod" value={paymentInfo.paymentMethod} onChange={handlePaymentInfoChange} required>
+            <option value="" disabled>Select Payment Method</option>
+            <option value="creditDebitCard">Credit Card/Debit Card</option>
+            <option value="mpesa">M-pesa</option>
+          </select>
         </label>
 
-        <h2>Course Details Confirmation</h2>
-        {/* Display the selected course details, e.g., course name, date, time, etc. */}
+
+        {paymentInfo.paymentMethod === 'creditDebitCard' && (
+  <label>
+    Card Number:
+    <input type="text" name="cardNumber" value={paymentInfo.cardNumber} onChange={handlePaymentInfoChange} required />
+  </label>
+)}
+
+{paymentInfo.paymentMethod === 'mpesa' && (
+  <label>
+    M-Pesa Number:
+    <input type="text" name="mpesaNumber" value={paymentInfo.mpesaNumber} onChange={handlePaymentInfoChange} required />
+  </label>
+)}
+
 
         <h2>Terms and Conditions</h2>
         <label>
           <input type="checkbox" checked={termsAccepted} onChange={handleTermsAcceptedChange} required />
           I agree to the terms and conditions.
         </label>
-        {/* Add terms and conditions text here */}
+        By enrolling in our CodingForKids program, you agree to abide by the terms and conditions outlined in our enrollment agreement, acknowledging that participation is subject to our policies and guidelines. Additionally, you consent to receive communications related to the program, including updates and notifications, via the contact information provided during enrollment.
 
         <button type="submit">Enroll</button>
       </form>

@@ -7,96 +7,408 @@
 }
 
 body {
-    background-image: url('https://qph.cf2.poecdn.net/main-sdxl_2dff096423118e16bf59e1e8aa020e6af57ccc1b0e50fe9ab30f412001228b5f.png?w=1024&h=1024');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     height: 100vh;
     margin: 0;
 }
 
+/* Courses.css */
+.container {
+  margin-top: 50px;
+}
+
+.heading {
+  font-size: 3em;
+}
+
+body {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
 .courses.container {
-    padding: 20px;
-  }
-  
-  .course-cards {
+  padding: 20px;
+}
+.course-heading {
+  color: #007bff; /* You can choose any shade of blue that you prefer */
+}
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .course-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-  }
-  
-  .course-card h2 {
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-card {
+  width: 48%; /* Adjust the width based on your design preferences */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.course-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  margin-bottom: 10px;
+}
+
+.course-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.course-card button:hover {
+  background-color: #0056b3;
+}
+
+
+.learn-more-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.learn-more-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.learn-more-card h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.learn-more-card ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.learn-more-card p {
+  margin: 0;
+}
+
+.learn-more-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.learn-more-card button:hover {
+  background-color: #0056b3;
+}
+/* Updated CSS Code */
+.registration.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.registration h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.registration form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.registration label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.registration input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.registration button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.registration button:hover {
+  background-color: #0056b3;
+}
+
+.registration select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.about-us {
+  text-align: center;
+}
+
+.about-us h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.mission, .vision {
+  width: 45%;
+}
+
+
+#missionVisionCarousel {
+  width: 100%; 
+}
+
+
+#missionVisionCarousel .carousel-inner {
+
+  height: 400px; 
+}
+
+
+#missionVisionCarousel .carousel-inner img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.mission img,
+.vision img {
+  max-width: 30%;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+
+.team-introductions {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-member {
+  display: inline-block;
+  width: 35%;
+  margin: 20px 3%; 
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  border-radius: 50%;
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.team-member h3,
+.team-member p {
+  margin: 10px 0;
+}
+
+.team-member .social-icons {
+  margin-top: 10px;
+}
+
+.team-member .social-icons a {
+  margin-right: 10px; 
+}
+
+.team-member .social-icons img {
+  width: 25px; 
+  height: auto;
+}
+
+.linkedin-icon {
+  margin-top: 10px;
+}
+
+.linkedin-icon img {
+  width: 25px;
+  height: auto;
+}
+
+
+.educational-approach {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-info, .social-media-links, .awards {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.social-media-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-links li {
+  margin: 0 10px;
+}
+
+.awards img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.educational-approach {
+  margin-bottom: 140px; 
+}
+
+
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 300px; 
+  object-fit: cover; 
+  margin-top: 50px;
+}
+
+.event-section {
+  margin-top: 30px;
+
+  h2 {
     font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .course-card p {
-    margin-bottom: 10px;
-  }
-  
-  .course-card button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .course-card button:hover {
-    background-color: #0056b3;
+    margin-bottom: 20px;
+    color: #333;
   }
 
-  .registration.container {
-    padding: 20px;
-  }
-  
-  .registration h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .registration form {
+  .events {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+
+    .event-card {
+      width: 30%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .event-details {
+        padding: 10px;
+
+        h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+          color: #333;
+        }
+
+        p {
+          font-size: 14px;
+          margin-bottom: 5px;
+          color: #666;
+        }
+
+        a {
+          color: #007bff;
+          text-decoration: none;
+
+          img {
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
-  
-  .registration h2 {
-    font-size: 20px;
-    margin: 20px 0;
-  }
-  
-  .registration label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .registration input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .registration button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .registration button:hover {
-    background-color: #0056b3;
-  }
+}
+
+

@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/Home';
 import SignUpPage from './components/SignUp';
 import LoginPage from './components/Login';
-import CreateCoursesPage from './components/CreateCourse';
 import CoursesPage from './components/Courses';
 import MentorsPage from './components/Mentors';
 import RegistrationPage from './components/RegistrationPage';
@@ -25,10 +24,9 @@ const App = () => {
                 <Route path="/mentors" element={<MentorsPage />} />
                 <Route path="/about-us" element={<AboutUsPage />} />
                 <Route path="/signup" element={<SignUpPage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/create-courses" element={<CreateCoursesPage />} />
-            
+                <Route path="/login" element={<LoginPage />} />            
                 <Route path="/registration" element={<RegistrationPage />} /> 
+
             </Routes>
             
         </div>
